@@ -268,4 +268,5 @@ class MyVideoCapture:
 
 
 # Create a window and pass it to the Application object
-App(tkinter.Tk(), "Bienvenue chez Visian", video_source=2)
+if __name__ == '__main__':
+    App(tkinter.Tk(), "Bienvenue chez Visian", video_source=0)
