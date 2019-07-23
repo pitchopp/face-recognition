@@ -88,7 +88,7 @@ class MyVideoCapture:
         self.img_resize = 3
 
         # Load Emotion model
-        self.emotion_model = load_model('./models/emotion_model.hdf5')
+        self.emotion_model = load_model('./models/emotion_model.model')
         self.emotion_classes = [u"Colere", u"Degout", u"Peur", u"Joie", u"Tristesse", u"Etonnement", u"Neutre"]
 
         # Load Gender model
@@ -96,7 +96,7 @@ class MyVideoCapture:
         self.gender_classes = ['Homme', 'Femme']
 
         self.age_model = get_model()
-        self.age_model.load_weights('./models/age_model.hdf5')
+        self.age_model.load_weights('./models/age_model.model')
 
         self.last_seen = {}
 
